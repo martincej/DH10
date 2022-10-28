@@ -1,42 +1,26 @@
+const prompt= require("prompt-sync")({sigint: true});
+
+
 /* 
-Escribir las siguientes tres funciones:
-
--?anterior: recibe un número como parámetro y devuelve ese número menos uno.
-
--?triple: recibe un número como parámetro y devuelve el triple de ese número.
-
-?anteriorDelTriple: recibe un número como parámetro y, utilizando las dos funciones anteriores, tendrá que devolver el número recibido multiplicado por 3 (tres) y al resultado restarle 1 (uno).  esta actividad no me queda clara
-
+Crear una función que recibe un string en minúscula, lo convierta a mayúsculas y lo retorne. 
+Investigá qué hace el método de strings .toUpperCase()
 */
 
-let anterior = function(numero) {
-    return numero - 1
-}
+// console.log('martin'.toUpperCase());
 
-let triple = function(numero) {
-    return numero * 3
-}
+let convertirMayus = paramString =>  paramString.toUpperCase();
 
-
-let anteriorDelTriple = function(numero) {
-
-    /* let aux = triple(numero);
-    let resultadoFinal = anterior(aux)
-    return resultadoFinal; */
-    return anterior(triple(numero))
-
-}
-
-
-console.log(anteriorDelTriple(2));
-
+/* console.log(convertirMayus('clase'));
+console.log(convertirMayus('martin'));
+console.log(convertirMayus('bianca')); */
 
 /* 
 
 Calculadora - Nivel I
 1. Crear un archivo calculadora.js que contendrá las distintas operaciones a
 realizar de nuestra calculadora.
-2. Crear una función sumar, esta deberá recibir dos parámetros y retornar la
+
+?2. Crear una función sumar, esta deberá recibir dos parámetros y retornar la
 suma de los mismos.
 3. Crear una función restar, la cual deberá recibir dos parámetros y retornar la
 resta del primero menos el segundo.
@@ -46,11 +30,33 @@ retornar el resultado de su multiplicación.
 de la división del primero sobre el segundo.
 */
 
-//CREAR FUNCION
-function sumar(a,b){
-    console.log('analizando a ' +  a);
-    console.log('analizando b ' +  b);
-    return a + b
-}
+let numA = Number(prompt('Ingresa numero A: '));
+let numB = Number(prompt('Ingresa numero B: '));
 
-//INVOCACION
+
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+const sumar = (a ,b) => a + b
+
+console.log(sumar(numA, numB));
