@@ -39,21 +39,63 @@ funciones
 
 ?anterior: recibe un número como parámetro y devuelve ese número menos uno.
 
-?triple: recibe un número como parámetro y devuelve el triple de ese número.
+/*Actividad Calculadora 
+Nivel I: 
+Items: 1 al 5*/
 
-?anteriorDelTriple: recibe un número como parámetro y, utilizando las dos funciones anteriores, tendrá que devolver el número recibido multiplicado por 3 (tres) y al resultado restarle 1 (uno).
+let num01 = 18, num02 = 7,  num03 = 5;
 
-*/
+const suma = (a,b) => a + b;
 
-let anterior = (numero) => numero - 1;
+const promedio = (a, b, c) => a + b + c/n;
 
-let triple = (numero) => numero * 3;
+const resta = (a, b) => a - b;
+
+const multiplicar = (a, b) => a * b;
+
+const dividir = (a, b) => a % b;
+
+/* Nivel II
+Items: 1 al 5*/
+
+console.log("------------Testeo de Operaciones / Calculadora------------");
+
+console.log("Suma" , suma(num01,num02));
+
+console.log("Resta" , resta(num01,num02));
+
+console.log("Multiplicar", multiplicar(num02,num01));
+
+console.log("Dividir", dividir(num01,num02));
+
+console.log("Dividir", dividir(num01,0));
+
+console.log("promedio", suma(num01, num02, num03)/3 )
+/*
+Nivel III 
+Items: 1 al 4*/
+
+let cuadradoDeUnNumero = (a, b) => a**b;
+function cuadrado(){
+    return (8, 2)
+}
+    console.log(cuadradoDeUnNumero (8, 2))
+
+    let promedioDeTresNumeros = (num01, num02, num03)/3
+    return 12+5+9/3
+    console.log(promedioDeTresNumeros);
+    
+    let calcularPorcentaje = (a, b) => (a/b)*n
+    console.log(calcularPorcentaje (300/15)*100);
 
 
-let anteriorDelTriple = (numero) => {
-    let aux = triple(numero)
-    return anterior(aux)
-};
+function GeneradorDePorcentaje (a){
+    return ((2/200)*10);
+}
+console.log(GeneradorDePorcentaje);
 
 
-console.log(anteriorDelTriple(3));
+/*Profe le comento que no entiendo por que si no aparecen
+errores en js, por que razon en la consola solo  aparece 
+hasta la actividad de calcular el cuadrado de un numero?
+ gracias por su respuesta.  */
