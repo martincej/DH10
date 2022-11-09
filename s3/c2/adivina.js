@@ -1,12 +1,6 @@
 const prompt= require("prompt-sync")({sigint: true});
 
-/* 
-  ? For 🎆 
- while
- do while
-*/
-
-let nro = 9;
+let nro =  Math.floor(Math.random() * 10 + 1);;
 function inputNumero(){
     return Number(prompt('adivina que nro estoy pensando: '));
 }
