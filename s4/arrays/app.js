@@ -21,10 +21,10 @@ console.log(arrayLetras[4]); // E es un string
 console.log(arrayLetras[5]); // F es un string */
 
 
-/* for (let pepe = 0; pepe < arrayLetras.length; pepe++) {
-    console.log(arrayLetras[pepe]);
+for (let i = 0; i < arrayLetras.length; i++) {
+    console.log(arrayLetras[i]);
 }
- */
+
 
 /* let nombre = 'Agos';
 

@@ -1,0 +1,38 @@
+/* 
+Más tarde de producción nos dieron el aviso de que las películas deberían estar todas en mayúsculas,
+para ellos nos solicitan que creemos una función que reciba por parámetro un array y 
+convierta el contenido de cada elemento a mayúsculas.
+Pista: revisa que hace el método de strings .toUpperCase().
+*/
+
+let peliculas = ["star wars", "totoro",  "rocky", "pulp fiction",  "la vida es bella"];
+
+const mayus = (arrayPelis) => {
+    
+    for (let i = 0; i < arrayPelis.length; i++) {
+        // arrayPelis[i] = arrayPelis[i].toUpperCase(); 
+
+        arrayPelis[i] = arrayPelis[i].toUpperCase(); 
+        console.log(arrayPelis[i]);
+
+    }
+}
+
+mayus(peliculas)
+
+console.log(peliculas);
+
+
+
+/* 
+miTexto.slice(inicio, fin): // inicio y fin son posiciones
+○ Devuelve el subtexto de miTexto que empieza en inicio y termina en la
+posición fin
+
+*/
+
+let texto = 'LA VIDA ES BELLA';
+
+let res = texto.slice(3,7)
+
+console.log(res);
