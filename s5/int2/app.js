@@ -12,11 +12,11 @@ CLASE INTEGRADORA DE CONTENIDOS II
 */
 
 function sumarSiEsParA(a, b) {
-    if (a % 2 === 0) {
-        return a + b
-    }else{
-        return a - b
-    }
+  if (a % 2 === 0) {
+    return a + b
+  } else {
+    return a - b
+  }
 }
 
 // console.log(sumarSiEsParA(2,5));
@@ -46,15 +46,15 @@ const edades2 = [11, 12];
 
 
 function obtenerMenores(arrayEdades) {
-    let menores = []
+  let menores = []
 
-    for (let i = 0; i < arrayEdades.length; i++) {
-       if (arrayEdades[i] < 18) {
-            menores.push(arrayEdades[i])
-       }  
+  for (let i = 0; i < arrayEdades.length; i++) {
+    if (arrayEdades[i] < 18) {
+      menores.push(arrayEdades[i])
     }
-    
-    return menores
+  }
+
+  return menores
 }
 
 // console.log(obtenerMenores(edades)); //[11, 12, 15, 10, 5]
@@ -64,23 +64,23 @@ function obtenerMenores(arrayEdades) {
 Obtener en un nuevo array las edades mayor o igual a 18.
 */
 function obtenerMayores(arrayEdades) {
-    let mayores = []
-    for (let i = 0; i < arrayEdades.length; i++) {
-       if (arrayEdades[i] >= 18) {
-            mayores.push(arrayEdades[i])
-       }  
+  let mayores = []
+  for (let i = 0; i < arrayEdades.length; i++) {
+    if (arrayEdades[i] >= 18) {
+      mayores.push(arrayEdades[i])
     }
-    return mayores
+  }
+  return mayores
 }
 
 function obtenerIguales(arrayEdades) {
-    let iguales = []
-    for (let i = 0; i < arrayEdades.length; i++) {
-       if (arrayEdades[i] === 18) {
-            iguales.push(arrayEdades[i])
-       }  
+  let iguales = []
+  for (let i = 0; i < arrayEdades.length; i++) {
+    if (arrayEdades[i] === 18) {
+      iguales.push(arrayEdades[i])
     }
-    return iguales
+  }
+  return iguales
 }
 // console.log(obtenerIguales(edades)); //[18, 18]
 
@@ -88,9 +88,9 @@ function obtenerIguales(arrayEdades) {
 /* Incrementar en 1 todas las edades. */
 
 function incrementar(arrayEdades) {
-    for (let i = 0; i < arrayEdades.length; i++) {
-        arrayEdades[i]++
-    }
+  for (let i = 0; i < arrayEdades.length; i++) {
+    arrayEdades[i]++
+  }
 }
 /* incrementar(edades)
 console.table(edades); */
@@ -103,7 +103,7 @@ PISTAS PARA RETORNAR EN UNA FUNCION
 */
 
 const arrayCuentas =
-[
+  [
     {
       titular: "Arlene Barr",
       estaHabilitada: false,
@@ -153,14 +153,14 @@ const arrayCuentas =
 
 */
 
-function menores2(arrayCuentasParam){
-    let menores = []
-    for (let i = 0; i < arrayCuentasParam.length; i++) {
-       if (arrayCuentasParam[i].edadTitular < 30) {
-            menores.push(arrayCuentasParam[i])
-       }
+function menores2(arrayCuentasParam) {
+  let menores = []
+  for (let i = 0; i < arrayCuentasParam.length; i++) {
+    if (arrayCuentasParam[i].edadTitular < 30) {
+      menores.push(arrayCuentasParam[i])
     }
-    return menores
+  }
+  return menores
 }
 
 
@@ -169,16 +169,40 @@ console.table(arrayCuentas);
 
 /* Obtener un array con las cuentas habilitadas */
 
-function cuentasHabilitadas(arrayCuentas){
-    let cuentasHab = []
-    for (let i = 0; i < arrayCuentas.length; i++) {
-       
-        if (arrayCuentas[i].estaHabilitada === true) {
-            cuentasHab.push(arrayCuentas[i])
-        }
-        
+function cuentasHabilitadas(arrayCuentas) {
+  let cuentasHab = []
+  for (let i = 0; i < arrayCuentas.length; i++) {
+
+    if (arrayCuentas[i].estaHabilitada === true) {
+      cuentasHab.push(arrayCuentas[i])
     }
-    return cuentasHab;
+
+  }
+  return cuentasHab;
 }
 
 // console.table(cuentasHabilitadas(arrayCuentas));
+
+
+let autos = [
+  {
+    marca: 'Toyota',
+    anio: 2022,
+    color: 'rojo'
+  },
+  {
+    marca: 'Renault',
+    anio: 2020,
+    color: 'gris'
+  },
+  {
+    marca: 'Peugeot',
+    anio: 2021,
+    color: 'rojo'
+  },
+  {
+    marca: 'Fiat',
+    anio: 2019,
+    color: 'negro'
+  }
+]
