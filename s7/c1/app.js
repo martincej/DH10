@@ -2,54 +2,106 @@
    * Bubble Sort 
 */
 
-/* let contA = 15;
-let contB = 25;
+
+/* let contA = 15
+let contB = 25
 
 console.log(contA, contB);
 
-console.log('swap');
+// swap
 
-let aux = contA;
-contA = contB;
-contB = aux;
+let aux = contA
 
-console.log(contA, contB); */
+contA = contB
+contB = aux
+console.log('swap...');
 
+console.log(contA, contB);
+ */
 
 const numeros = [5, 1, 4, 2, 8];
 
-console.log(numeros[4 + 1]); //undefined
- //swapping
-/*  let aux = numeros[1];
- numeros[1] = numeros[1 + 1];
- numeros[1 + 1] = aux;
- 
- console.log(numeros); */
+// console.log(numeros.sort());
 
-function bubbleSort(array){
-    let contador =  0;
+//  1, 4, 2 , 5 , 8
+
+const bubbleSortAsc = (array) => {
+    // let contador = 1
     for (let i = 0; i < array.length; i++) { // n = 5
 
         for (let j = 0; j < array.length - 1; j++) { // n = 5
-           console.log('iteracion: ' + contador);
-          
+            //console.log('iteracion: ' + contador);
             if (array[j] > array[j + 1]) {
-                //swapping
-              let aux = array[j];
-              array[j] = array[j + 1];
-              array[j + 1] = aux;    
+                // swap
+                let aux = array[j]
+                array[j] = array[j + 1]
+                array[j + 1] = aux 
             }
-           // contador++
+            //contador++            
         }
-        
+    
     }
 
-}
+} 
 
-console.log('ordenando....'); 
+console.log('ordenando.asc..');
 
-bubbleSort(numeros)
+bubbleSortAsc(numeros)
 
-console.log(numeros); 
+console.log(numeros);
 
 
+const bubbleSortDesc = (array) => {
+    // let contador = 1
+    for (let i = 0; i < array.length; i++) { // n = 5
+
+        for (let j = 0; j < array.length - 1; j++) { // n = 5
+            //console.log('iteracion: ' + contador);
+            if (array[j] < array[j + 1]) {
+                // swap
+                let aux = array[j]
+                array[j] = array[j + 1]
+                array[j + 1] = aux 
+            }
+            //contador++            
+        }
+    
+    }
+
+} 
+
+console.log('ordenando Desc...');
+
+bubbleSortDesc(numeros)
+
+console.log(numeros);
+
+
+
+
+
+
+
+const bubbleSortObj = (array) => {
+    // let contador = 1
+    for (let i = 0; i < array.length; i++) { // n = 5
+
+        for (let j = 0; j < array.length - 1; j++) { // n = 5
+            //console.log('iteracion: ' + contador);
+            if (array[j].altura < array[j + 1].altura) {
+                // swap
+                let aux = array[j]
+                array[j] = array[j + 1]
+                array[j + 1] = aux 
+            }
+            //contador++            
+        }
+    
+    }
+} 
+
+console.log('ordenando Desc...');
+
+bubbleSortObj(numeros)
+
+console.log(numeros);

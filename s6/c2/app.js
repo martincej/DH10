@@ -27,7 +27,6 @@ let matriz = [
     [1, 1, 1],   // indices --> 0
     [2, 'H', 2],  // indices --> 1
     [3, 3, 'Z']  // indices --> 2
-
 ]
 
 console.table(matriz);
